@@ -2,8 +2,8 @@ import org.apache.spark.SparkContext
 import org.apache.spark.SparkConf
 import scala.util.Random
 object GenerateNames {
-    val SPARK_MASTER = "spark://ec2-35-164-80-151.us-west-2.compute.amazonaws.com:7077"
-    val HDFS = "hdfs://ec2-35-164-80-151.us-west-2.compute.amazonaws.com:9000/"
+    val SPARK_MASTER = "spark://ec2-54-193-106-249.us-west-1.compute.amazonaws.com:7077"
+    val HDFS = "hdfs://ec2-54-193-106-249.us-west-1.compute.amazonaws.com:9000/"
     val outputDir = HDFS + "/output/part"
     def main(args: Array[String]) {
         val conf = new SparkConf()
